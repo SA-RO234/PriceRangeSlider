@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Price || Range</title>
+    <link rel="stylesheet" href="/src/style/output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  </head>
+  <body>
+      <div class="double-rageBox  w-[400px] m-[100px_auto] bg-amber-100 relative p-[40px_30px] rounded-[20px]">
+          <div class="double-rageLine w-full h-[10px] bg-gray-500 relative rounded-[20px]">
+              <span class="range-track absolute h-full bg-amber-600" id="range-track"></span>
+              <input type="range" name="" min="0" id="" max="10000" step="0" value="2500" class="min inputrange absolute bg-none pointer-events-none w-full appearance-none  h-[5px] top-[50%] translate-y-[-50%]">
+              <input type="range" name="" min="0" value="7500" id="" max="10000" step="0" class="max inputrange absolute bg-none pointer-events-none w-full h-[5px] top-[50%] appearance-none translate-y-[-50%]">
+             
+          </div>
+           <div class="layerValue flex mt-[20px] justify-center items-center gap-[10px]">
+              <div class="minValue text-center">
+                 <label for="min" class="text-[20px] font-bold text-center">Min</label>
+                 <input type="number" name="" value="1000" id="number" class="min border-1 text-[20px] font-bold rounded-[5px] border-black text-center">
+              </div>
+              <i class="fa-solid fa-arrow-right-arrow-left text-[20px]"></i>
+              <div class="maxValue text-center ">
+                  <label for="min" class="text-[20px] font-bold" >Max</label>
+                 <input type="number" name="" value="2000" id="number" class="max border-1 text-[20px] font-bold rounded-[5px] border-black text-center">
+              </div>
+           </div>
+           <button type="button" id="btnGetPrice" class="btn bg-black text-center mt-[20px] p-[10px_20px] cursor-pointer text-white rounded-[5px] font-bold text-[18px]">Go</button>
+      </div>
+  
+    <script src="/js/app.js"></script>
+  </body>
+</html>
